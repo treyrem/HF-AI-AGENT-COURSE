@@ -1,26 +1,9 @@
 #!/usr/bin/env python3
 """
-GAIA Agent System Components
-Multi-agent framework for GAIA benchmark questions using LangGraph
+GAIA Agent Workflow Package
+Main orchestration workflows for the GAIA benchmark agent system
 """
 
-from .state import (
-    GAIAAgentState,
-    AgentState,
-    QuestionType,
-    AgentRole,
-    ToolResult,
-    AgentResult
-)
+from .gaia_workflow import GAIAWorkflow, SimpleGAIAWorkflow
 
-from .router import RouterAgent
-
-__all__ = [
-    'GAIAAgentState',
-    'AgentState', 
-    'QuestionType',
-    'AgentRole',
-    'ToolResult',
-    'AgentResult',
-    'RouterAgent'
-] 
+__all__ = ['GAIAWorkflow', 'SimpleGAIAWorkflow'] 
